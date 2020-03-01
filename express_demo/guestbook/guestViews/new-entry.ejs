@@ -1,0 +1,23 @@
+<%-include( "header.ejs")%>
+
+<h3>write a new entry</h3>
+<form method="post" role="form">
+    <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title"
+               placeholder="Entry title" required aria-required="true">
+    </div>
+    <div>
+        <label for="body">Entry text</label>
+        <textarea id="body" name="body"
+                  placeholder="Love Express! it's a great tool for building websites"
+                  rows="3"
+                  required
+                  aria-required="true"
+        ></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Post entry" class="btn btn-primary">
+    </div>
+</form>
+<%-include( "footer.ejs")%>
