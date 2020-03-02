@@ -1,0 +1,10 @@
+<%-include("./components/_header.ejs")%>
+<% if(currentUser&&currentUser===user.id){%>
+    <a href="/edit" class="pull-right">Edit your profile</a>
+<%}%>
+<h1><%=user.name()%></h1>
+<h2>Joined on<%= user.createAt%></h2>
+<% if(user.bio){%>
+    <p class="panel-body"><%=user.bio%></p>
+<%}%>
+<%-include("./components/_footer.ejs")%>

@@ -1,0 +1,14 @@
+<%-include("./components/_header.ejs")%>
+<div  class="modal-dialog" >
+<h1>Sign Up</h1>
+    <form action="/signup" method="post"autocomplete="off">
+        <input type="text" name="username" class="form-control"
+               placeholder="Username" autofocus required aria-required="true">
+        <br>
+        <input name="password" type="password" class="form-control" placeholder="Password" required>
+        <br>
+        <input type="submit" value="Sign up" class="btn btn-primary btn-block">
+    </form>
+</div>
+
+<%-include("./components/_footer.ejs")%>
